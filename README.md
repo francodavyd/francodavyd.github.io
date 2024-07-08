@@ -30,7 +30,7 @@ me considero una persona honesta y muy responsable para cumplir con cada tarea a
 * -------------------------------- <br>
 
 ## 🌐 Sociales:
-[![LinkedIn](https://www.linkedin.com/in/franco-david-sanchez-929243283-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/ franco-david-sanchez-929243283) 
+[![LinkedIn](https://www.linkedin.com/in/franco-david-sanchez-929243283-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/franco-david-sanchez-929243283/) 
 
 
 
