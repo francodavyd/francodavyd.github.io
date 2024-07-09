@@ -33,6 +33,7 @@ header .logo img{
     height: 100px;
     margin: 0 30px;
     margin-top: 10px;
+    border-radius: 50px;
 }
 header .logo h1{
     margin-top: 35px;
@@ -174,7 +175,7 @@ margin-top: -10px;
 }
 
 .work{
-    margin-top: -320px;
+    margin-top: -360px;
     display: flex;
 }
 .work .work-content{
@@ -263,6 +264,8 @@ margin-bottom: 100px;
     border: none;
     background: #9a5de028;
     text-align: center;
+    color: #000;
+    font-size: 16px;
     border-bottom: 2px solid #9a59e6;
     margin-bottom: 25px;
 }
@@ -279,11 +282,15 @@ height: 100px;
     margin: auto;
     margin-top: 10px;
     color: #fff;
+    cursor: pointer;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
     background: linear-gradient(to right, #2507ad, #d8d7d7);
     border-radius: 30px;
+}
+.contacto .btn-submit:hover{
+    color: #1c069b;
 }
 .contacto .info{
   
@@ -378,9 +385,16 @@ height: 100px;
     border: 2px solid #9a59e6;
     border-radius: 50px;
 }
+.trabajos .galeria .item .item-info p{
+ font-size: 15px;
+ background: #9b59e65b;
+ font-weight: 700;
+}
+
 .trabajos .galeria .item h3{
     color: #fff;
-    margin-bottom: 30px;
+    margin-top: -20px;
+    margin-bottom: 5px;
 }
 .trabajos .galeria .item img{
     width: 100%;
@@ -393,7 +407,7 @@ height: 100px;
     left: 0;
     bottom: 0;
     text-align: center;
-    background-color: #1c8fa393;
+    background-color: #1c8fa3af;
     width: 100%;
     padding: 20px;
     opacity: 0;
@@ -401,10 +415,12 @@ height: 100px;
 }
 .trabajos .galeria .item .item-info span{
 color: #fff;
+background: 
+#9b59e64d;
 font-weight: 700;
 display: inline-block;
 border: 2px solid #000;
-margin: 0 3px;
+margin: 5px 3px;
 padding: 5px 20px;
 
 }
@@ -425,8 +441,9 @@ padding: 5px 20px;
 @media screen and (max-width:1550px){
     .inicio {
         clip-path: none;
-        height: 70vh;
-        margin-bottom: 120px;
+        height: fit-content;
+        padding-bottom: 30px;
+        margin-bottom: 150px;
     }
    
     .inicio .row .col-content h2{
@@ -450,10 +467,10 @@ padding: 5px 20px;
     }
     .sobre-mi{
         clip-path: none;
-        height: 70vh;
+        height: 100vh;
     }
     .sobre-mi .sobre-mi-content p{
-        font-size: 15px;
+        font-size: 12px;
         display: inline;
     }
     .sobre-mi .sobre-mi-info i{
@@ -462,6 +479,7 @@ padding: 5px 20px;
         .work{
             display: flex;
             flex-direction: column;
+            padding-top: 50px;
         }
         .work .work-content{
          margin-top: 100px;
@@ -570,16 +588,17 @@ padding: 5px 20px;
         display: block;
     }
     .inicio{
-        height: 85vh;
+        height: fit-content;
+        padding-bottom: 30px;
     }
     .inicio .row{
-        height: 70vh;
+        height: fit-content;
         flex-direction: column;
     }
     .inicio .row .col-img .img-content{
         border: 2px solid #9a59e6;
         width: fit-content;
-        border-radius: 20px;
+        border-radius: 50px;
         overflow: hidden;
         margin: auto;
         margin-top: 10px;
@@ -612,4 +631,53 @@ padding: 5px 20px;
         margin: auto;
     }
     
+}
+@media screen and (max-width: 620px){
+    .inicio {
+        height: fit-content;
+        padding-bottom: 30px;
+    }
+    .inicio .logo h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .inicio .logo img{
+      width: 50px;
+      height: 50px;
+    }
+    .inicio .row{
+        width: 90vw;
+        height: 100%;
+    }
+    .inicio .row .col-img img{
+        height: 280px;
+    }
+    .inicio .row .col-content h2{
+        font-size: 13px;
+    }    
+    .inicio .row .col-content p{
+        font-size: 12px;
+    }
+    
+    .sobre-mi .sobre-mi-info i{
+        font-size: 90px;  
+        margin-top: -15px;
+        }
+    .footer .footer-content h3{
+        font-size: 20px;
+        }
+    .footer .footer-content h4{
+      font-size: 15px;
+      margin-top: 10px;
+    }
+}
+@media screen and (min-width: 390px){
+ .sobre-mi{
+    height: 75vh;
+ }
+ .sobre-mi .sobre-mi-info i{
+    margin-top: 15px;
+ }
 }

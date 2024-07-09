@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/mylogo.ico">
+    <script src="app.js"></script>
     <title>Mi portfolio web</title>
 </head>
 <body>
@@ -163,40 +165,72 @@
   <section class="trabajos" id="trabajos">
     <h2>Mis trabajos</h2>
     <p>En esta sección presentare algunos de mis proyectos. Para ver más, los invito
-    a visitar mis repositorios de Github. <a href="#">Haz click aquí.</a>
+    a visitar mis repositorios de Github. <a href="https://github.com/francodavyd" target="_blank">Haz click aquí.</a>
     </p>
    
 <div class="galeria">
-    <div class="item">
-        <img src="img/homeimage.png" alt="">
+    <div class="item item7">
+        <img src="img/repo.jpg" alt="">
         <div class="item-info">
-            <h3>Titulo del trabajo</h3>
-            <span>JAVA</span> <span>Spring Boot</span>
-            <a href="">Ver más</a>
+            <h3>Microservicios y más</h3>
+            <p>Por el momento las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+            <span>Visita mi GitHub</span> 
+           
         </div>
     </div>
-    <div class="item j">
-        <img src="img/homeimage.png" alt="">
+    <div class="item item1">
+        <img src="img/mafava.jpg" alt="">
         <div class="item-info">
-            <h3>Titulo del trabajo</h3>
-            <span>JAVA</span> <span>Spring Boot</span>
-            <a href="">Ver más</a>
+            <h3>Mafava Estudio sitio web</h3>
+            <p>Sitio web simple y adaptable, realizado 100% según las necesidades del cliente, su única función es redireccionar a las personas al WhatsApp de Mafava. También cuenta con una campaña en Google Ads. Se encuentra alojado en
+                ....
+            </p>
+            <span>HTML5</span> <span>CSS3</span><span>JAVASCRIPT</span>
         </div>
     </div>
-    <div class="item j">
-        <img src="img/homeimage.png" alt="">
+    <div class="item item2">
+        <img src="img/bjb.jpg" alt="">
         <div class="item-info">
-            <h3>Titulo del trabajo</h3>
-            <span>JAVA</span> <span>Spring Boot</span>
-            <a href="">Ver más</a>
+            <h3>BJB Estudio App </h3>
+            <p>App de escritorio realizada en Java, utilizando Java Swing y JPA con Apache Link. Sistema de gestión de empleados y operaciones sobre el rubro del estudio,cuenta con un pequeño sistema de seguridad, envio de correos, gráficos estadísticos y además es una aplicación Cliente-Servidor mediante WebSockets. Donde el cliente solo visualiza los cambios realizados por el servidor.</p>
+            <span>Java/Swing</span> <span>Sockets</span><span>JPA</span>
+            <span>MYSQL</span>
         </div>
     </div>
-    <div class="item j">
-        <img src="img/homeimage.png" alt="">
+    <div class="item item3">
+        <img src="img/usercrud.jpg" alt="">
         <div class="item-info">
-            <h3>Titulo del trabajo</h3>
-            <span>JAVA</span> <span>Spring Boot</span>
-            <a href="">Ver más</a>
+            <h3>Crud de usuarios App</h3>
+            <p>Aplicación de escritorio simple para el uso de las operaciones CRUD de usuarios, utilizando Java Swing y JPA con Apache Link. También cuenta con reloj y fecha realizados con Threads</p>
+            <span>Java</span> <span>JPA</span><span>MYSQL</span>
+            
+        </div>
+    </div>
+    <div class="item item4">
+        <img src="img/miniball.jpg" alt="">
+        <div class="item-info">
+            <h3>Miniball Game App</h3>
+            <p>Juego simple desarrollado con Java, mediante el uso de la concurrencia.</p>
+            <span>JAVA</span> <span>Threads</span>
+           
+        </div>
+    </div>
+    <div class="item item5">
+        <img src="img/tres_raya.jpg" alt="">
+        <div class="item-info">
+            <h3>Tres en raya App</h3>
+            <p>Juego simple desarrollado con Java.</p>
+            <span>JAVA</span> 
+           
+        </div>
+    </div>
+    <div class="item item6">
+        <img src="img/timeca.jpg" alt="">
+        <div class="item-info">
+            <h3>Calculador de tiempos</h3>
+            <p>Aplicación de escritorio simple para calcular el tiempo transcurrido entre dos fechas.</p>
+            <span>JAVA</span> 
+           
         </div>
     </div>
 </div>
@@ -206,17 +240,17 @@
 
    <section class="contacto" id="contacto">
     <div class="contacto-content">
-<form action="" class="form">
+<form action="" class="form" >
     <div class="form-header">
         <h2>Envíame un mensaje</h2>
     </div>
     <label for="nombre" class="form-label">Nombre:</label>
-    <input type="text" class="form-input" placeholder="Escriba su nombre" id="nombre">
+    <input type="text" class="form-input" placeholder="Escriba su nombre" id="nombre" required>
     <label for="apellido" class="form-label">Apellido:</label>
-    <input type="text" class="form-input" placeholder="Escriba su apellido" id="apellido">
+    <input type="text" class="form-input" placeholder="Escriba su apellido" id="apellido" required>
     <label for="mensaje" class="form-label">Mensaje:</label>
-    <textarea name="" id="mensaje" class="form-textarea" placeholder="Escriba su mensaje"></textarea>
-    <input type="submit" class="btn-submit" value="Enviar mensaje">
+    <textarea name="" id="mensaje" class="form-textarea" placeholder="Escriba su mensaje, pida su presupuesto, solicite información o ayuda" required></textarea>
+        <input type="submit" class="btn-submit" value="Enviar mensaje"onclick="sendMessageWithText()">
 </form>
     </div>
     <div class="info">
@@ -231,7 +265,7 @@
      </div>
      <div class="divbutton">
         <i class="fa-solid fa-phone-volume"></i>
-        <a href="">+54 9 2615722699</a>
+        <a href="#" onclick="sendMessage()">+54 9 2615722699</a>
      </div>
      <div class="divbutton">
         <i class="fa-brands fa-instagram"></i>
@@ -248,6 +282,7 @@
         <div class="footer-content">
             <h3>Francodav<span>y</span>d</h3>
             <h4>Software developer</h4>
+            <h5 style="margin-top: 30px;">Desarrollado por Krombyte</h5>
         </div>
     </div>
    </footer>
