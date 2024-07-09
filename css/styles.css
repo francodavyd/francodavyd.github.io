@@ -42,7 +42,7 @@ header .logo span{
     color: #9a59e6;
 }
 /* Estilizando nav*/
-nav ul{
+#nav ul{
     display: flex;
     justify-content: space-around;
     width: 50vw;
@@ -50,14 +50,14 @@ nav ul{
     font-weight: 600;
     font-family: sans-serif;
 }
-nav ul li{
+#nav ul li{
     list-style: none;
 }
-nav ul a{
+#nav ul a{
     text-decoration: none;
     transition: all 0.3s;
 }
-nav ul a:hover{
+#nav ul a:hover{
     color: #9a59e6;
     font-size: 15px;
     transform: scale(1.05);
@@ -547,7 +547,7 @@ padding: 5px 20px;
     .inicio .row .col-content h2, p, .btn{
         font-size: 15px;
     }
-    nav ul li{
+    #nav ul li{
         font-size: 13px;
     }
     .servicios .servicios-content .casilla h2{
@@ -560,28 +560,29 @@ padding: 5px 20px;
     }
 }
 @media screen and (max-width:1105px){
-    .nav{
+    #nav{
         display: none;
     }
-    .nav.responsive {
+    #nav.responsive {
       display: flex;
+      flex-direction: column;
         background: rgba(0, 0, 0, .9);
         top: 0;
         left: 0;
-        height: 100vh;
+        height: 65vh;
         width: 100%;
         position: absolute;
         padding: 10px;
         align-items: center;
         justify-content: center;
     }
-    .nav.responsive ul{
+    #nav.responsive ul{
         flex-direction: column;
         text-align: center;
     }
-    .nav.nav.responsive li{
+    #nav.responsive li{
         padding-bottom: 30px;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: normal;
     }
     #icon-nav{

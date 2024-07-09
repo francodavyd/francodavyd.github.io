@@ -31,3 +31,44 @@ function sendMessageWithText() {
     // Abrir la URL de WhatsApp
     window.open(urlWhatsApp, '_blank');
 }
+
+function responsiveMenu(){
+    let x = document.getElementById("nav");
+    if(x.className===""){
+        x.className = "responsive";
+
+        //creamos el elemento que cierra el menu
+        let span = document.createElement("span");
+        span.innerHTML = "X";
+        span.style.fontSize = "30px";
+        span.style.color = "#9a59e6";
+        span.style.cursor = "pointer";
+        document.getElementById("nav").appendChild(span);
+
+        //quitamos el boton eliminar cuando se hace click sobre este
+        span.onclick = function(){
+            x.className = "";
+            span.remove();
+        }
+    }else{
+        x.className="";
+    }
+}
+
+//Este codigo es para agregar una función a cada links del menu
+//responsive
+//cuando se presione en cualquier de los links del menu debe desaparecer el menu
+function closeMenu(){
+     
+    var x = document.getElementById("nav");
+    if(x.className==="responsive"){
+        x.className = "";
+    }
+   
+    
+    //removemos el boton eliminar
+    btnEliminar = document.querySelector("#nav span");
+    btnEliminar.remove();
+}
+
+    
